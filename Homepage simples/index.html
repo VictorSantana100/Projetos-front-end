@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Design Responsivo</title>
     <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
+
 <body>
     <section class="banner">
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <div class="toggle" onclick=" toggle();"></div>
+        </header>
 
-    <header>
-        <a href="#" class="logo">Logo</a>
-        <div class="toggle" onclick=" toggle();"></div>
-    </header>
-    
-    <div  class="content">
-        
-        <div class="contentBx">
-            <h2> O futuro<br>na sua mão</h2>
-            <p>A tecnologia perfeita para qualquer ocasião
-            </p>
-            <a href="#">Compre Agora</a>
+        <div class="content">
+            <div class="contentBx">
+                <h2> O futuro<br>na sua mão</h2>
+                <p>A tecnologia perfeita para qualquer ocasião
+                </p>
+                <a href="#">Compre Agora</a>
+            </div>
+
+            <div class="imgBx">
+                <img src="img/relogio.png">
+            </div>
         </div>
 
-        <div class="imgBx">
-            <img src="img/relogio.png">
-        </div>
-        
-    </div>
+        <lu class="sci">
+            <li>
+                <a href="#">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
 
-    <lu class="sci">
+            <li>
+                <a href="#">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
 
-        <li><a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+            </li>
+        </lu>
 
-        <li><a href="#"> <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a></li>
-        
-        <li><a href="#"> <i class="fa fa-whatsapp" aria-hidden="true"></i>
-        </a></li>
-
-    </lu>
-
-
-    <lu class="menu">
-        <li><a href="#">Home </a></li>
-        <li><a href="#">Produtos</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Sobre</a></li>
-    </lu>
-
+        <lu class="menu">
+            <li><a href="#">Home </a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sobre</a></li>
+        </lu>
     </section>
 
     <script type="text/javascript">
-        function toggle(){
+        function toggle() {
             const toggle = document.querySelector('.toggle');
             const banner = document.querySelector('.banner');
             toggle.classList.toggle('active')
             banner.classList.toggle('active')
         }
-    
-        </script>
+    </script>
 </body>
+
 </html>
