@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#1b83dc;
+    --secondary:#585757;
+}
+
+h1{
+    margin: 3rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+label{
+    color:var(--secondary);
+    font-size: 1.2rem;
+}
+
+textarea:focus{
+    border: solid 2px var(--primary-color);
+    outline: var(--primary-color);
+}
+.container{
+    width: 75%;
+    margin: 0 auto;
+}
+
+.caracteres{
+    width: 100%;
+    padding: 10px;
+    border-radius: 0 20px 0 20px;
+}
+.contagem-caracteres{
+    font-size: 1.2rem;
+    color: var(--secondary);
+}
